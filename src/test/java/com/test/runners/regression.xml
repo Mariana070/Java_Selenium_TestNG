@@ -1,0 +1,79 @@
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite">
+    <test name="Blaze Tests">
+        <parameter name="choice" value="Laptops"> </parameter>
+        <parameter name="laptopBrand" value="MacBook Pro"> </parameter>
+        <parameter name="expectedTitle" value="MacBook Pro"> </parameter>
+        <parameter name="expectedLaptopPrice" value="1100"> </parameter>
+        <parameter name="expectedDescriptions" value="Product description&#10;Apple has introduced three new versions of its MacBook Pro line, including a 13-inch and 15-inch model with the Touch Bar, a thin, multi-touch strip display that sits above the MacBook Pro's keyboard." > </parameter>
+        <parameter name="expectedAlertMessage" value="Product added"> </parameter>
+        <parameter name="name" value="Mariana"> </parameter>
+        <parameter name="country" value="Ukraine"> </parameter>
+        <parameter name="city" value="Kolomyya"> </parameter>
+        <parameter name="creditCard" value="767654543232"> </parameter>
+        <parameter name="month" value="September"> </parameter>
+        <parameter name="years" value="2023"> </parameter>
+        <parameter name="expectedMessage" value="Thank you for your purchase!"> </parameter>
+        <parameter name="url" value="https://www.demoblaze.com/cart.html"> </parameter>
+
+        <classes>
+            <class name="com.test.blaze.test.BlazeMacBookProTest"> </class>
+            <class name="com.test.blaze.test.BlazeCartTest"> </class>
+            <class name="com.test.blaze.test.BlazeOrderTest"> </class>
+
+        </classes>
+    </test>
+    <test name="Bank Tests">
+        <parameter name="expectedHeader" value="XYZ Bank"> </parameter>
+        <parameter name="managerFirstName" value="Mariana"> </parameter>
+        <parameter name="managerLastName" value="Kuzmyn"> </parameter>
+        <parameter name="managerCode" value="60060"> </parameter>
+        <parameter name="managerExpectedMassager" value="Customer added successfully with customer id"> </parameter>
+        <parameter name="firstUserName" value="Mariana"> </parameter>
+        <parameter name="lastUserName" value="Kuzmyn"> </parameter>
+        <parameter name="postCode" value="60060"> </parameter>
+        <parameter name="confirmationMessage" value="Customer added successfully with customer id"> </parameter>
+        <parameter name="managerCustomerName" value="Mariana Kuzmyn"> </parameter>
+        <parameter name="managerCurrencyDollar" value="Dollar"> </parameter>
+        <parameter name="managerAccountMassage" value="Account created successfully with account Number"> </parameter>
+        <parameter name="customerName" value="Mariana"> </parameter>
+        <parameter name="CustomerLastName" value="Kuzmyn"> </parameter>
+        <parameter name="customerCode" value="60060"> </parameter>
+        <parameter name="customerMassage" value="Customer added successfully with customer id"> </parameter>
+        <parameter name="AccountCustomerName" value="Mariana Kuzmyn"> </parameter>
+        <parameter name="accountCurrency" value="Dollar"> </parameter>
+        <parameter name="accountMessage" value="Account created successfully with account Number"> </parameter>
+        <parameter name="customerFunName" value="Mariana"> </parameter>
+        <parameter name="customerFunLastName" value="Kuzmyn"> </parameter>
+        <parameter name="customerFunCode" value="60060"> </parameter>
+        <parameter name="firstName" value="Mariana"> </parameter>
+        <parameter name="lastName" value="Kuzmyn"> </parameter>
+        <parameter name="code" value="60060"> </parameter>
+        <parameter name="CustomerExpectedMessage" value="Customer added successfully with customer id"> </parameter>
+        <parameter name="BankName" value="Mariana Kuzmyn"> </parameter>
+        <parameter name="currencyDollar" value="Dollar"> </parameter>
+        <parameter name="expectedAccountMessage" value="Account created successfully with account Number"> </parameter>
+        <parameter name="customerName" value="Mariana"> </parameter>
+        <parameter name="customerLastname" value="Kuzmyn"> </parameter>
+        <parameter name="customerCode" value="60060"> </parameter>
+        <parameter name="loginName" value="Mariana Kuzmyn"> </parameter>
+        <parameter name="loginExpectedMessage" value="Welcome Mariana Kuzmyn !!"> </parameter>
+        <parameter name="depositAmount" value="500"> </parameter>
+        <parameter name="depositExpectedMessage" value="Deposit Successful"> </parameter>
+        <parameter name="amount" value="300"> </parameter>
+        <parameter name="expectedWithdrawMessage" value="Transaction successful"> </parameter>
+        <classes>
+            <class name="com.test.bank.test.BankLoginTest" > </class>
+            <class name="com.test.bank.test.BankManagerTest"> </class>
+            <class name="com.test.bank.test.BankCustomerTest"> </class>
+        </classes>
+    </test>
+    <test name="Sauce Demo">
+        <classes>
+            <class name="com.test.saucedemo.SauceDemoTests.SauceLoginTest"> </class>
+            <class name="com.test.saucedemo.SauceDemoTests.SauceMainTest"> </class>
+        </classes>
+    </test>
+
+</suite>
