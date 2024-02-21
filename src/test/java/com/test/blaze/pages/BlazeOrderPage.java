@@ -12,23 +12,23 @@ public class BlazeOrderPage {
         PageFactory.initElements(driver,this);
     }
     @FindBy(css = "#name")
-    WebElement name;
+    private WebElement name;
     @FindBy(css = "#country")
-    WebElement country;
+    private WebElement country;
     @FindBy(css = "#city")
-    WebElement city;
+    private WebElement city;
     @FindBy(css = "#card")
-    WebElement card;
+    private WebElement card;
     @FindBy(css = "#month")
-    WebElement month;
+    private WebElement month;
     @FindBy(css = "#year")
-    WebElement years;
+    private WebElement years;
     @FindBy(xpath = "//button[.='Purchase']")
-    WebElement purchaseButton;
+    private WebElement purchaseButton;
     @FindBy(xpath = "//h2[contains(text(),'Thank you for your purchase!')]")
-    WebElement validateMessage;
+    private WebElement validateMessage;
     @FindBy(xpath = "//button[.='OK']")
-    WebElement okButton;
+    private WebElement okButton;
 
     public void orderFunctionality(String name,String country,String city,String creditCard,String month,String years, String expectedMessage){
         this.name.sendKeys(name);

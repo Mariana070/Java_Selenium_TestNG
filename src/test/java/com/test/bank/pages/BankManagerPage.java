@@ -16,32 +16,32 @@ public class BankManagerPage {
         PageFactory.initElements(driver,this);
     }
     @FindBy(xpath = "//button[contains(text(),'Add Customer')]")
-    WebElement  addCustomerButton;
+    private WebElement  addCustomerButton;
     @FindBy(xpath = "//input[@placeholder='First Name']")
-    WebElement firstName;
+    private WebElement firstName;
     @FindBy(xpath = "//input[@placeholder='Last Name']")
-    WebElement lastName;
+    private WebElement lastName;
 
     @FindBy(xpath = "//input[@placeholder='Post Code']")
-    WebElement code;
+    private WebElement code;
     @FindBy(xpath = "//button[@type='submit']")
-    WebElement submitAddCustomerButton;
+    private WebElement submitAddCustomerButton;
     @FindBy(xpath = "//button[contains(text(),'Open Account')]")
-    WebElement openAccountButton;
+    private WebElement openAccountButton;
     @FindBy(css = "#userSelect")
-    WebElement customerName;
+    private WebElement customerName;
     @FindBy(css = "#currency")
-    WebElement currency;
+    private WebElement currency;
     @FindBy(xpath = "//button[.='Process']")
-    WebElement processButton;
+    private WebElement processButton;
     @FindBy(xpath ="//button[contains(text(),'Customers')]")
-    WebElement customerButton;
+    private WebElement customerButton;
     @FindBy(tagName  ="input")
-    WebElement searchBox;
+    private WebElement searchBox;
     @FindBy(xpath = "//td[@class='ng-binding']")
     List<WebElement> allInformation;
     @FindBy(xpath = "//button[@class='btn home']")
-    WebElement homeButton;
+    private WebElement homeButton;
 
     public void addCustomerFunctionality(WebDriver driver,String firstName,String lastName,String code,String expectedMessage){
         addCustomerButton.click();

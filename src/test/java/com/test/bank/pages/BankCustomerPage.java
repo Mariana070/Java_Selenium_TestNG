@@ -12,33 +12,33 @@ public class BankCustomerPage {
         PageFactory.initElements(driver,this);
     }
     @FindBy(css = "#userSelect")
-    WebElement userSelectButton;
+    private WebElement userSelectButton;
     @FindBy(xpath = "//button[.='Login']")
-    WebElement selectLoginButton;
+    private WebElement selectLoginButton;
     @FindBy(xpath = "//button[contains(text(),'Deposit')]")
-    WebElement depositButton;
+    private WebElement depositButton;
     @FindBy (tagName = "input")
-    WebElement amountConsole;
+    private WebElement amountConsole;
     @FindBy(xpath = "//button[.='Deposit']")
-    WebElement depositButtonSubmit;
+    private WebElement depositButtonSubmit;
     @FindBy(xpath = "//span[.='Deposit Successful']")
-    WebElement validateMessage;
+    private WebElement validateMessage;
     @FindBy(xpath = "//button[contains(text(),'Withdrawl')]")
-    WebElement withdrawButton;
+    private WebElement withdrawButton;
     @FindBy(xpath = "//button[.='Withdraw']")
-    WebElement withdrawSubmit;
+    private WebElement withdrawSubmit;
     @FindBy(xpath = "//button[contains(text(),'Transactions')]")
-    WebElement transactionsButton;
+    private WebElement transactionsButton;
     @FindBy(xpath = "//strong[contains(text(),' Welcome ')]")
-    WebElement header;
+    private WebElement header;
     @FindBy(xpath = "//span[.='Transaction successful']")
-    WebElement successMessage;
+    private WebElement successMessage;
     @FindBy(xpath = "//div[@class='center'//strong[2]")
-    WebElement customerBalance;
+    private WebElement customerBalance;
     @FindBy (xpath = "//tr[@id='anchor0']//td[2]")
-    WebElement credit;
+    private WebElement credit;
     @FindBy(xpath = "//tr[@id='anchor1']//td[2]")
-    WebElement debit;
+    private WebElement debit;
 
 
 

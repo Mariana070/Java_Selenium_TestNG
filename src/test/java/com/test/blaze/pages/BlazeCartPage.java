@@ -18,7 +18,7 @@ public class BlazeCartPage {
     @FindBy(xpath = "//td")
     List<WebElement> productInfo;
     @FindBy(xpath = "//button[contains(text(),'Place Order')]")
-    WebElement placeOrderButton;
+    private WebElement placeOrderButton;
 
     public void getInfoFromCart(String expectedTitle, String expectedPrice){
         List<String> expectedInfo= Arrays.asList("",expectedTitle,expectedPrice,"");

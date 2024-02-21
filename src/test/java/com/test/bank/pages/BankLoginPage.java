@@ -12,11 +12,11 @@ public class BankLoginPage {
         PageFactory.initElements(driver,this);//it does same logic of driver.findElement
     }
     @FindBy(css=".mainHeading")
-    WebElement header;
+    private WebElement header;
     @FindBy(xpath = "//button[.='Customer Login']")
-    WebElement customerLoging;
+    private WebElement customerLoging;
     @FindBy(xpath = "//button[contains(text(),'Bank Manager Login')]")
-    WebElement managerLogin;
+    private WebElement managerLogin;
 
 
     public void LoginPageComponentsValidation(String expectedHeader){

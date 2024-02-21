@@ -11,13 +11,13 @@ public class SauceDemoLoginPage {
         PageFactory.initElements(driver,this);
     }
     @FindBy(css = "#user-name")
-    WebElement userName;
+    private WebElement userName;
     @FindBy (css = "#password")
-    WebElement password;
+    private WebElement password;
     @FindBy(css = "#login-button")
-    WebElement loginButton;
+    private WebElement loginButton;
     @FindBy(xpath = "//h3")
-    WebElement errorMessage;
+    private WebElement errorMessage;
 
     public void Login(String userName,String password){
         this.userName.sendKeys(userName);

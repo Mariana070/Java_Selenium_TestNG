@@ -15,7 +15,7 @@ public class BlazeHomePage {
     @FindBy(xpath = "//a[@id='itemc']")
     List<WebElement> categories;
     @FindBy(css = "#cartur")
-    WebElement cartButton;
+    private WebElement cartButton;
 
     public void choseCategory(String option) throws InterruptedException {
         for(WebElement category:categories){

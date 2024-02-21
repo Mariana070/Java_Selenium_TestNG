@@ -18,13 +18,13 @@ public class SauceMainPage {
     @FindBy(css = ".inventory_item_name")
     List<WebElement> nameOfProducts;
     @FindBy(css = ".inventory_details_name")
-    WebElement nameOfEachProduct;
-    @FindBy(css = ".inventory_details_desc") ////div[2]//div/div/div[2]/div[2]
-    WebElement description;
+    private WebElement nameOfEachProduct;
+    @FindBy(css = ".inventory_details_desc")
+    private WebElement description;
     @FindBy(xpath = "//div[contains(@class,'details_price')]")
-    WebElement price;
+    private WebElement price;
     @FindBy(css = "#back-to-products")
-    WebElement backButton;
+    private WebElement backButton;
 
 
     public void chooseItem(String item) {
